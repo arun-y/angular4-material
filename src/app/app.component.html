@@ -1,7 +1,39 @@
 <md-grid-list cols="2" rowHeight="2:1">
-  <md-grid-tile>1</md-grid-tile>
-  <md-grid-tile>2</md-grid-tile>
-  <md-grid-tile>3</md-grid-tile>
-  <md-grid-tile>4</md-grid-tile>
+  <md-grid-tile>
+    <md-input-container>
+      <input mdInput floatPlaceholder="always" placeholder="Important but not Urgent" value="Lets do">
+    </md-input-container>
+    <md-list>
+      <md-list-item> Pepper 
+        <section class="task-status">
+          <md-checkbox class="task-status" ng-checked="checked"></md-checkbox>
+        </section>
+      </md-list-item>
+      <md-list-item> Salt
+                <section class="task-status">
+          <md-checkbox class="task-status" ng-checked="checked"></md-checkbox>
+        </section>
+         </md-list-item>
+      <md-list-item> Paprika
+        <section class="task-status">
+          <md-checkbox class="task-status" ng-checked="checked"></md-checkbox>
+        </section>
+         </md-list-item>
+    </md-list>
+  </md-grid-tile>
+  <md-grid-tile>
+    <md-input-container>
+      <input mdInput floatPlaceholder="always" placeholder="Important and Urgent" value="Lets do">
+    </md-input-container>
+  </md-grid-tile>
+  <md-grid-tile>
+    <md-input-container>
+      <input mdInput floatPlaceholder="always" placeholder=" Neither Important nor Urgent" value="Lets do">
+    </md-input-container>
+  </md-grid-tile>
+  <md-grid-tile>
+    <md-input-container>
+      <input mdInput floatPlaceholder="always" placeholder="Not Important but Urgent" value="Lets do">
+    </md-input-container>
+  </md-grid-tile>
 </md-grid-list>
-
